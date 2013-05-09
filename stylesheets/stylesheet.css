@@ -69,9 +69,9 @@ header {
 }
 
 header h1 {
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
-  letter-spacing: -1px;
-  font-size: 48px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif; font-weight: bold;
+  text-align: center;
+  font-size: 50px;
   color: #303030;
   line-height: 1.2;
 }
@@ -99,13 +99,15 @@ header h2 {
 }
 
 #downloads {
+  margin-top: 20px;
   margin-bottom: 40px;
+  margin-left: 110px;
 }
 
 a.button {
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;                     
-  border-radius: 30px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;                     
+  border-radius: 5px;
   border-top: solid 1px #cbcbcb;
   border-left: solid 1px #b7b7b7;
   border-right: solid 1px #b7b7b7;
@@ -114,7 +116,7 @@ a.button {
   line-height: 25px;
   font-weight: bold;
   font-size: 15px;
-  padding: 12px 8px 12px 8px;
+  padding: 4px 2px 4px 2px;
   display: block;
   float: left;
   width: 179px;
@@ -147,11 +149,11 @@ a.button:hover {
 }
 
 a.button span {
-  padding-left: 50px;
   display: block;
   height: 23px;
+  text-align: center;
 }
-
+/*
 #download-zip span {
   background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
 }
@@ -160,7 +162,7 @@ a.button span {
 }
 #view-on-github span {
   background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
-}
+}*/
 #view-on-github {
   margin-right: 0;
 }
