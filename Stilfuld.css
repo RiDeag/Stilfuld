@@ -175,7 +175,6 @@ body {
   visibility: visible !important;
   left: 20px !important;
   top: -1px !important;
-  font-weight: bold !important;
   padding-top: 3px !important;
   padding-bottom: 3px !important;
   padding-left: 4px !important;
@@ -271,8 +270,9 @@ body {
 
 .post.reply {
   background: transparent !important;
-  border: none !important;
-  width: 100% !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  width: 99.5% !important;
 }
 
 #qp {
@@ -289,11 +289,12 @@ body {
 }
 
 #qp .post.op{
-  margin:0!important;
+  margin: 0 !important;
 }
 
-#qp .yourPost .post.reply {
-  border-left:none!important;
+#qp .yourPost .post.reply, 
+#qp .quotesYou .post.reply {
+  width: 98.9% !important;
 }
 
 .inline.crosspost .postContainer.replyContainer{
@@ -313,7 +314,7 @@ body {
 .inline .postContainer{
   background: #ffffff !important;
   border: 1px solid rgba(0,0,0,.1) !important;
-  box-shadow: -1px 1px 1px rgba(0,0,0,.1);  
+  box-shadow: none !important;
 }
 
 .inline .menu-button {
@@ -329,31 +330,6 @@ body {
 
 .opContainer.qphl {
   box-shadow: none !important;
-}
-
-.post.reply.qphl .postMessage {
-  margin-right:42px!important;
-}
-
-.exblock.reply,
-.reply.post.highlight,
-.reply.post:target,
-.post.reply.qphl,
-.post.op.qphl {
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-.exblock.reply .menu-button,
-.reply.post.highlight .menu-button,
-.reply.post:target .menu-button,
-.post.reply.qphl .menu-button,
-.post.op.qphl .menu-button {
-  margin-right: 22px !important;
-}
-
-.yourPost .menu-button {
-  margin-right: 20px !important;
 }
 
 .opContainer {
@@ -674,43 +650,24 @@ a.quotelink {
   content: url('http://i.imgur.com/iDyadDD.png') !important;
 }
 
-.yourPost .post.reply.qphl,
+
+.highlight-own:root .yourPost > .post.reply {
+  box-shadow: 0 0 0 1px rgba(65, 131, 173, .5)!important;
+  border: none !important;
+}
+
+.highlight-you:root .quotesYou > .post.reply {
+  box-shadow: 0 0 0 1px rgba(173, 69, 65, .5)!important;
+  border: none !important;  
+}
+
 .exblock.reply,
 .reply.post.highlight,
 .reply.post:target,
 .post.reply.qphl,
 .post.op.qphl {
-  border-left: 2px solid #ad4541 !important;
-}
-
-.qphl .fileThumb > img:first-child {
-  margin-left: -12px !important;
-}
-
-.post.reply.qphl .inline .postInfo,
-.yourPost .post.reply.qphl .fileInfo,
-.yourPost .post.reply.qphl .postInfo,
-.post.op.qphl .fileInfo,
-.qphl .postMessage {
-  margin-left: 8px !important;
-}
-
-.qphl .postInfo,
-.qphl .fileInfo {
-  margin-left: 6px !important;
-}
-
-.yourPost .post.reply {
-  border-left: 2px solid #4183ad !important;
-}
-
-.post.reply.qphl .inline .postMessage,
-.yourPost .post.reply.qphl .postMessage {
-  margin-left: 10px !important;
-}
-
-.yourPost .post.reply.qphl .fileThumb > img:first-child {
-  margin-left: -10px !important;
+  box-shadow: 0 0 0 1px rgba(173, 69, 65, .5)!important;
+  outline: none !important;
 }
 
 .fileText,
@@ -1133,7 +1090,7 @@ input[name="sub"] {
 .menu-button {
   float: right !important;
   margin-top: 1px !important;
-  margin-right: 20px !important;
+  margin-right: 15px !important;
   margin-left: 10px !important;
   font-size: 0 !important;
 }
@@ -1188,7 +1145,6 @@ input[name="sub"] {
 .entry a:hover {
   color: #49637d !important;
 }
-
 
 /**
     Hide threads / posts
@@ -1307,34 +1263,6 @@ input[name="sub"] {
 #thread-stats:hover {
   cursor: default !important;
 }
-
-/*
-#update-timer {
-  position: fixed !important;
-  left: 5px !important;
-  right: auto !important;
-  bottom: 20px !important;
-  top: auto !important;
-  border: none !important;
-  z-index: 4 !important;
-  font-size: 8pt !important;
-  color: #b3b3b3 !important;
-  background: none !important;
-  text-align: left !important;
-}
-
-#update-status.new {
-  position: fixed !important;
-  left: 17px !important;
-  right: auto !important;
-  bottom: 20px !important;
-  top: auto !important;
-  border: none !important;
-  z-index: 4 !important;
-  font-size: 8pt !important;
-  background: none !important;
-  text-align: left !important;
-}*/
 
 }
 
