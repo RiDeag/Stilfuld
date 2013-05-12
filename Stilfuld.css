@@ -275,6 +275,8 @@ body {
   width: 99.5% !important;
 }
 
+#qp .yourPost .post.reply, 
+#qp .quotesYou .post.reply,
 #qp {
   box-shadow: none !important;
   border: none !important;
@@ -290,11 +292,6 @@ body {
 
 #qp .post.op{
   margin: 0 !important;
-}
-
-#qp .yourPost .post.reply, 
-#qp .quotesYou .post.reply {
-  width: 98.9% !important;
 }
 
 .inline.crosspost .postContainer.replyContainer{
