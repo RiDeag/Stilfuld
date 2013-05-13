@@ -546,13 +546,8 @@ body {
   display: inline !important;
 }
 
-#custom-board-list>a.current {
-  font-size: 0px !important;
-}
-
-#custom-board-list .current::after {
+#custom-board-list .current {
   font-size: 10pt !important;
-  content: attr(title) !important;
   margin-left: 2px !important;
   margin-right: 2px !important;
   padding-bottom: 2px !important;
@@ -1288,6 +1283,7 @@ input[name="sub"] {
   top: 4px !important;
   right: 2px !important;
   margin-left: 0 !important;
+  font-size: 0 !important;
 }
  
 #menu.reply.dialog {
