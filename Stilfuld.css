@@ -1008,8 +1008,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 
 .prettyprint {
   font-size: 9pt !important;
-  max-width: 700px!important;
-  overflow: scroll!important;
+  max-width: 700px !important;
 }
 
 
