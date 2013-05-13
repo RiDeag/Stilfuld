@@ -1283,11 +1283,10 @@ input[name="sub"] {
   font-size: 6pt !important;
 }
  
- 
 .post.op .menu-button {
   position: absolute !important;
   top: 4px !important;
-  right: -2px !important;
+  right: 2px !important;
   margin-left: 0 !important;
 }
  
