@@ -688,16 +688,6 @@ body {
   margin-left:0px!important;
 }
 
-.favicon {
-  display: inline !important;
-  float: left !important;
-  margin-top: 0px !important;
-  width: 16px !important;
-  margin-left: -20px !important;
-  height: 16px !important;
-  opacity: 0 !important;
-}
-
 .replylink {
   margin-left: 5px !important;
   margin-right: 5px !important;
@@ -761,12 +751,15 @@ body {
   padding-bottom:3px!important;
 }
 
-.opContainer > div .postInfo:before {
-  float: left !important;
-  content: url('http://i.imgur.com/3abUhuc.png') !important;
-  margin-left: 0px !important;
-  margin-right: 6px !important;
-  margin-top: 0px !important;
+.watch-thread-link {
+  position: relative !important;
+  top: 5px !important;
+  left: -2px !important;
+  width: 13px !important;
+}
+
+.watch-thread-link.watched {
+  opacity: 0.5 !important;
 }
 
 .postInfo {
