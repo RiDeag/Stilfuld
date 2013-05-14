@@ -7,8 +7,8 @@
 #shortcuts::after,
 #header-bar {
   background: #3d444e !important;
-  background-image: linear-gradient(rgba(61, 68, 78, 1), rgba(52, 58, 66, 1)) !important;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(61, 68, 78, 1)), color-stop(1, rgba(52, 58, 66, 1)));
+  background-image: linear-gradient(rgba(61, 68, 78, 1), rgba(56,63,71, 1)) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(61, 68, 78, 1)), color-stop(1, rgba(56,63,71, 1)));
   background-repeat: repeat-x !important;
 }
 
@@ -17,8 +17,8 @@
 }
 
 #full-board-list {
-  background-color:#fff!important;
-  border:solid 5px #343a42!important;
+  background-color: #fff !important;
+  border: solid 5px #343a42 !important;
 }
 
 #header-bar .menu-button i,
@@ -539,7 +539,7 @@ body {
 
 #custom-board-list {
   position: relative !important;
-  top: 3px !important;
+  top: 5px !important;
 }
 
 #custom-board-list[hidden] {
@@ -547,11 +547,10 @@ body {
 }
 
 #custom-board-list .current {
-  font-size: 10pt !important;
   margin-left: 2px !important;
   margin-right: 2px !important;
   padding-bottom: 2px !important;
-  font-weight: 600 !important;
+  font-weight: normal !important;
 }
 
 #full-board-list a {
@@ -648,7 +647,7 @@ body {
 }
 
 #header-bar .menu-button i::before {
-  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAA/BJREFUOE9jYCARaOVKK8v4CIsCtTES1CqSzmshlMGTLxjD7SooyMWBrkEkk88pZLbzL4tW3ft8hpwmovH8MgZOCjxYDRfPF6pMXOr9t3lP4v+0Ff7/pDJF17PyM4NcAgOMOnUqW/qOpPxv35/4XzJH5Ib7ZOsfujWql/iUOVXRDWU0bNA8Vr41/H/JZt//pZv9/qev9PsvEMwzBaiQC2ois32v8bPSLf5g+bglTv9LtwT+z18X8p/bnb0fqAbhI4MkZXaJLKFFFt3aQIX2/2OX2P1PXOb836JN7wu3FIcl1HYWsw7dd/FLHcDyMJy1JvA/ixvzZqAaIbDFiYkejNLFEkusegz/m3er/zfuVIZj+36T/5we7NOByjiBmMWwSfOBWZcaXN4CqN6qy/Afpzp7O1CeG2ygR6gxm3Kl4l35Ktn/PHmc/zlz2P9z5bL/583n+q9YLfdfKVf+NlCZIhAzyRVLHxQuEgCqYfsvXir6X75C7i+3HecuoJwJSB4e2EKOPE7iiSKHVcoUPmpUq/xUq1T6oVwk/0EiXuw2tz3HaqBCNZC3+VK5+zym2P/XbdL4J5Ui/pRLgx0UxsZAzIqeIkCmi7KxsZgKiHL78PJz+jIyMjgAxXSBWALkXZAG8QhBa74Anm3c6hwdzMxMLkAhEWSXoRsKdzE0ErAlXGagnDA0vOBexGUQirhGnqyUUCpfEFAQPYEzamjIMhsba4BcDTIUf47RyVXiky4W6wyZ7fjZf7rDLz4lLjeQJslcYRfFcpn5Vu36x+17je4695s+ALLPSeWKThXzFQAFDcj1qEAxT0rVoFn9au2O2P9t+6P/V2+PASZaDnCyEczka+w6kPW/40AcMKdEg+U7gezWfYn/bTqN3grr8cHSK8RQvQIlfr0mtdslm4L/5673BOOyLSH/ZVIkzgGlpcSiBW3C5jn/g8mB6DyoGut2w5/c0hwJKK7ky+TOsu0z+a/fKg/HRu3K/zXLVd8CFRqKiwtwaNWoXLHq0YLLm3dp/lfMkn7DoczWA1SjhBKerMksLXKVcv8Z0xn/s2Sy/GdIY/jPlM70X7JI8gdQoSNIMX8kT6J8lfx/pgwmsLxAgcB/2RyZlywszKC0iBo5otGCjgpV8n8VqhX+CwIVChcJ/2fNZP0vXyj3CWYgOzsrp0iy0HLFasX/0hXSwJyk+F80QeQBIyOjOUaEMDMzsHH7c5ZLp0he4THkmitRJPFep0nnP18A71mgYk2YBg5eNiFeN+4K7kDOvVwOnGvZeFijgHJ8uNIiO1BCFohF+E157Lg9OOdyCLHHAPmwIgymD5TVQAkcVMJgZDtchoMSLcggkCVEAwAmfD6sSOi/rgAAAABJRU5ErkJggg==') !important;
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABSlBMVEW+vr6+vr6+vr6+vr7MzMzMzMzGxsbMzMzJycnMzMzMzMzMzMzExMTMzMzMzMzMzMzMzMzMzMzDw8O/v7/MzMzMzMzMzMzMzMy/v7/MzMzMzMzMzMzMzMzMzMzCwsLMzMzMzMzHx8fMzMzAwMDMzMzMzMzAwMDMzMzJycnMzMzExMTIyMjBwcHBwcHFxcXMzMzMzMzMzMzMzMzMzMzMzMzIyMjFxcXMzMzMzMzMzMzKysrLy8vMzMzDw8PHx8fMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzBwcHCwsLMzMzMzMzMzMzAwMDMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzAwMC/v7/MzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMwAAAC/v7+/v7/Dw8PAwMDIyMi/v7/Ly8vMzMy9yFIdAAAAZnRSTlP7/v7+GI68Jq5AITvJiKBNUkbR9jyBMUz3iVw+HWHYNSm5d+4jDOYcqpXMs+LewSKMN2BaeLHFhI+HpqNq0Lh5RTgPb0SXGhSULZ3h2TkTC+wOQjM0BiUJCunvQQcVEgUECAMCAQB2YmOxAAABDklEQVR42k2OxY7EMBBEc1hmZmZmZpgdZgxNsB1lrPj/r+vuaDVblyo9ld2lsH/aaQM5ws/vDxdzlW/X93eB4HskouM2Y7ApxB4/bYKE8Cqk0irzFgTqwZXQfMYYFsAJCL5ZTIEnQfppOTp69FhiSqMcQ23IH0F2Vvdls3rU4byjDfRDr4im0zUbr/vt9fnxwUyPw4b7RhMpn3ZKAQCaVywhQkhKTuB88Bwf/mBlMeSTkBibKuv5w4xHsHlCk2YFKSiAhF8a5nxyJiLIrzwJX+LCnJsjvzjH5n1cMGAVXakB/mnQs9CA1oF0/ZKuN7Zy2UCsbTBm3dzdXlcIMnMltZxdUmWyi5bdHe+rJuvqF2wniyu31SB/AAAAAElFTkSuQmCC') !important;
   position: fixed !important;
   left: 2px !important;
   top: 4px !important;
