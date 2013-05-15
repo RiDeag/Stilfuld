@@ -18,7 +18,7 @@
 
 #full-board-list {
   background-color: #fff !important;
-  border: solid 5px #343a42 !important;
+  border: solid 5px #383f47 !important;
 }
 
 #header-bar .menu-button i,
@@ -28,7 +28,7 @@
 
 #menu.dialog:not(.left),
 #menu.dialog:not(.left) .submenu {
-  border: 4px solid #343a42 !important;
+  border: 4px solid #383f47 !important;
 }
 
 #globalMessage,
@@ -299,7 +299,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 }
 
 #qr.dialog {
-  background: #343a42 !important;
+  background: #383f47 !important;
   box-shadow: none !important;
 }
 
