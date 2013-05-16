@@ -1072,29 +1072,38 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   border-radius: 0 0 5px 5px !important;
 }
 
-#qr.dialog {
-  padding: 5px !important;
-  position: fixed !important;
-  display: inline !important;
-  visibility: hidden !important;
+#qr.dialog.autohide {
   top: -226px !important;
-  right: 0px !important;
-  left: auto !important;
-  width: 300px !important;
   transition: all 0.5s ease;
   z-index: 2 !important;
 }
 
-#qr.dialog.has-captcha:not([Hidden]),
-#qr.dialog:not([Hidden]) {
-  visibility: visible !important;
+#qr.dialog.has-captcha {
   top: 26px !important;
-  z-index: 10 !important;
+  transition: all 0.5s ease;
 }
 
-#qr.dialog.has-captcha {
-  top: -300px !important;
-  transition: all 0.9s ease;
+#qr.dialog.has-captcha.autohide {
+  top: -308px !important;
+  transition: all 0.5s ease;
+}
+
+#qr.autohide:not(.has-focus):not(:hover) > form,
+#file-n-submit:not(.has-file)
+#qr-filerm {
+  display: inherit !important;
+}
+
+#qr.dialog {
+  padding: 5px !important;
+  position: fixed !important;
+  display: inline !important;
+  top: 26px !important;
+  right: 0px !important;
+  left: auto !important;
+  width: 300px !important;
+  transition: all 0.5s ease;
+  z-index: 10 !important;
 }
 
 #qr .move {
