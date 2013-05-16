@@ -7,7 +7,9 @@
 
 * The 4chan logo in the top left works as the header-bar menu button and the text "4chan" opens the settings.
 
-* To open full-board list use the keybind ctrl + b.
+* "Ctrl+B" will toggle the board list into view by default.
+
+* For the Quick reply to work properly, you must have "Persistent QR" and "Auto Hide QR" enabled.
 
 * Open the Quick reply by pressing "i" close it by pressing esc.
 
