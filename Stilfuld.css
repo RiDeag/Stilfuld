@@ -208,6 +208,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   color: #7c818c !important;
 }
 
+.quotelink.filtered,
 .warning,
 .deadlink,
 .deadlink.quotelink,
@@ -1040,6 +1041,12 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 .inlined {
   font-style: italic !important;
   opacity: 1 !important;
+}
+
+.deadlink,
+.deadlink.quotelink,
+.quotelink.filtered {
+  text-decoration: line-through !important;
 }
 
 .warning,
