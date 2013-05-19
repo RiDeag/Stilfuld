@@ -13,7 +13,7 @@
 }
 
 #header-bar.dialog:not(.autohide) {
-  box-shadow:0px 1px 5px rgba(0, 0, 0, .5)!important;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, .5) !important;
 }
 
 #full-board-list {
@@ -1438,7 +1438,7 @@ input[name="sub"] {
   top: 2px !important;
   margin-right: 8px !important;
   right: 0 !important;
-  z-index: 10;
+  z-index: 1;
   font-size: 0 !important;
 }
 
