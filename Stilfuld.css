@@ -31,10 +31,18 @@
   border: 4px solid #383f47 !important;
 }
 
-#globalMessage,
 .postContainer {
   background-color: #fff !important;
-  box-shadow: -1px 1px 1px rgba(0,0,0,.08);
+  border: 1px solid #e4e4e4 !important;
+}
+
+.threadContainer {
+  border-color: #e4e4e4 !important;
+}
+
+#globalMessage {
+  border: 1px solid #e4e4e4 !important;
+  background: #fff !important;
 }
 
 .replylink {
@@ -50,10 +58,11 @@
 #qp {
   box-shadow: none !important;
   border: none !important;
+  outline: none !important;
 }
 
 #qp .postContainer {
-  border: 1px solid rgba(0,0,0,.05) !important;
+  border: 1px solid #e4e4e4 !important;
 }
 
 .inline.crosspost .postContainer.replyContainer{
@@ -206,23 +215,31 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   color: #d56b6b !important;
 }
 
+.highlight-you:root .quotesYou > .post.reply.qphl,
+.highlight-own:root .yourPost > .post.reply.qphl {
+ border-color: transparent !important;
+}
+
+.highlight-you:root .quotesYou > .post.reply,
 .highlight-own:root .yourPost > .post.reply {
-  box-shadow: 0 0 0 1px rgba(65, 131, 173, .5)!important;
-  border: none !important;
+  border-color: #9abbcf !important;
+  border-width: 1px !important;
 }
 
 .highlight-you:root .quotesYou > .post.reply {
-  box-shadow: 0 0 0 1px rgba(173, 69, 65, .5)!important;
-  border: none !important;  
+  border-style: dotted !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
 }
 
 .exblock.reply,
 .reply.post.highlight,
-.reply.post:target,
+.reply:target,
 .post.reply.qphl,
 .post.op.qphl {
-  box-shadow: 0 0 0 1px rgba(173, 69, 65, .5)!important;
-  outline: none !important;
+  background: #fff !important;
+  outline: 1px solid #cf9c9a !important;
 }
 
 .fileText,
@@ -466,7 +483,8 @@ input[name="sub"] {
 }
 
 .stub {
-  background: #e5e5e5 !important;
+  background-color: #fff !important;
+  border: 1px solid #e4e4e4 !important;
 }
 
 #thread-stats {
@@ -563,11 +581,11 @@ body {
   visibility: hidden !important;
   position: fixed !important;
   z-index: -110 !important;
-  top:-60px!important;
-  left:100px!important;
+  top: -60px !important;
+  left: 100px !important;
   width: 500px !important;
-  padding:5px 0 !important;
-  border-radius: 0 0 5px 5px!important;
+  padding: 5px 0 !important;
+  border-radius: 0 0 5px 5px !important;
   transition: all 0.5s ease;
   z-index: -11 !important;
 }
@@ -653,23 +671,43 @@ body {
   top: 4px !important;
 }
 
-.post {
-  border-radius: 5px !important;
-}
-
 .postContainer {
-  position: relative !important;
   min-width: 100% !important;
-  margin-top: 5px !important;
-  margin-bottom: 15px !important;
+  margin-top: -3px !important;
   z-index: 0 !important;
-  border-radius: 5px !important;
 }
 
-.autohide .thread,
+.post.reply {
+  position: relative !important;
+  top: -19px !important;
+  margin-top: 1px !important;
+  margin-bottom: -19px !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  width: 99.6% !important;
+}
+
+#qp .postContainer {
+  padding-top: 19px !important;
+}
+
 .autohide .board {
   margin-top: -14px !important;
   transition: all 1s ease-in-out 1s;
+}
+
+.thread,
+.board {
+  margin-top: 24px !important;
+  transition: all 1s ease-in-out 1s;
+}
+
+.autohide #qr.dialog.autohide {
+  margin-top: -28px !important;
+}
+
+.autohide #qr.dialog {
+  top: 0px !important;
 }
 
 .thread,
@@ -682,10 +720,60 @@ body {
   clear: none !important;
 }
 
-.threadContainer {
-  padding-left:20px!important;
-  margin-left:0px!important;
+.threadOP .post.reply {
+  margin-bottom: -18px !important;
 }
+
+.threadContainer {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  padding-left: 20px !important;
+  margin-left: 0 !important;
+}
+
+.threadContainer .post.reply {
+  max-width: 99.5% !important;
+  min-width: 99.5% !important;
+  margin-bottom: -19px !important;
+}
+
+.highlight-you:root .quotesYou > .post.reply {
+  padding-right: 2px !important;
+  margin-bottom: -19px !important;
+}
+
+.highlight-you:root .yourPost > .post.reply {
+  padding-right: 2px !important;
+  margin-bottom: -19px !important;
+}
+
+.highlight-you:root .quotesYou > .post.reply.qphl,
+.highlight-own:root .yourPost > .post.reply.qphl {
+ border-color: transparent !important;
+ margin-right: -25px !important;
+ min-width: 99.4% !important;
+ max-width: 99.4% !important;
+}
+
+.highlight-you:root .quotesYou > .post.reply.qphl .menu-button {
+  left: 1px !important;
+}
+
+.highlight-own:root .yourPost > .post.reply.qphl .menu-button {
+  left: 2px !important;
+}
+
+/*
+.highlight-you:root .yourPost::before {
+position: relative !important;
+left: -20px !important;
+top: 0px !important;
+/*float: left !important;
+content: "Cunt" !important;
+font-size: 9pt !important;
+color: #9abbcf !important;
+}
+*/
 
 .replylink {
   margin-left: 5px !important;
@@ -696,21 +784,15 @@ body {
 }
 
 .summary {
-  position:absolute!important;
-  right:62px!important;
-  margin-top:-33px!important;
-  z-index:1!important;
-  font-size:9pt!important;
+  position: absolute !important;
+  right: 60px !important;
+  margin-top: -22px !important;
+  z-index: 1 !important;
+  font-size: 9pt !important;
 }
 
 .postNum span {
   font-size: 0 !important;
-}
-
-.post.reply {
-  border-right: none !important;
-  border-bottom: none !important;
-  width: 99.5% !important;
 }
 
 #qp .menu-button {
@@ -722,9 +804,14 @@ body {
 }
 
 .inline {
-  margin: 0px !important;
+  margin-top: 5px !important;
   margin-left: 10px !important;
   max-width: 80% !important;
+}
+
+.inline .opContainer,
+.inline .postContainer{
+  padding-top: 19px !important;
 }
 
 .inline .menu-button {
@@ -739,15 +826,17 @@ body {
 }
 
 .opContainer {
+  margin-top: -4px !important;
   height: 100% !important;
   width: 100% !important;
 }
 
 .op {
+  margin-top: -1px !important;
   display: table !important;
   height: 100% !important;
   width: 100% !important;
-  padding-bottom:3px!important;
+  padding-bottom: 3px !important;
 }
 
 .watch-thread-link {
@@ -850,11 +939,12 @@ body {
 }
 
 #unread-line {
-  display:block!important;
-  margin-top:-7px!important;
-  padding-bottom:1px!important;
+  position: relative !important;
+  display: block !important;
+  margin-top: 4px !important;
+  padding-bottom: 7px !important;
   border-top: 1px dotted !important;
-  height:1px !important;
+  height: 1px !important;
 }
 
 /**
@@ -885,9 +975,7 @@ body {
 
 #globalMessage {
   margin: 35px 50px 0 50px!important;
-  background-color: #fff !important;
   z-index: 0 !important;
-  border-radius: 5px !important;
   padding: 5px 0 !important;
 }
 
@@ -1139,7 +1227,7 @@ textarea.field {
 }
 
 #qr-filename-container {
-  border-bottom-left-radius:4px!important;
+  border-bottom-left-radius: 4px !important;
   margin-bottom: 3px !important;
   overflow: hidden !important;
   max-height: 19px !important;
@@ -1279,8 +1367,8 @@ input[name="sub"] {
 }
  
 .post.op .menu-button {
-  position: absolute !important;
-  top: 4px !important;
+  position: relative !important;
+  top: -23px !important;
   right: 2px !important;
   margin-left: 0 !important;
   font-size: 0 !important;
@@ -1319,20 +1407,13 @@ input[name="sub"] {
 }
 
 .stub {
-  padding: 0 0 0 0 !important;
-  margin-top:24px!important;
+  position: relative !important;
   width: 100% !important;
-  border-radius: 5px !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
-}
-
-.stub:first-of-type {
-  margin-top: 25px !important;
-}
-
-.autohide .stub:first-of-type {
-  margin-top: 14px !important;
+  padding: 5px 0 0 0 !important;
+  min-height: 29px !important;
+  max-height: 29px !important;
+  margin-left: -1px !important;
+  top: -1px !important;
 }
 
 .hide-reply-button {
@@ -1345,12 +1426,12 @@ input[name="sub"] {
 }
 
 .hide-thread-button {
-  position: absolute !important;
+  position: relative !important;
   float: right !important;
   top: 2px !important;
   margin-right: 8px !important;
   right: 0 !important;
-  z-index: 1;
+  z-index: 10;
   font-size: 0 !important;
 }
 
@@ -1381,8 +1462,8 @@ input[name="sub"] {
 .stub a {
   margin-left: 0px !important;
   font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
-  font-size: 8pt !important;
-  padding-left: 2px !important;
+  font-size: 9pt !important;
+  padding-left: 7px !important;
 }
 
 /**
@@ -1408,6 +1489,39 @@ input[name="sub"] {
 
 @-moz-document regexp("https?://boards\\.4chan\\.org\\/(.|..|...|....)\\/catalog") {
 
+/**
+    Colours
+*/
+
+#ctrl,
+#qf-ctrl.button,
+body {
+  color: #5F5F5F !important;
+}
+
+#qf-box {
+  outline: none !important;
+}
+
+input:focus, 
+textarea:focus {
+  border: none !important;
+}
+
+#theme {
+  background: #fff !important;
+}
+
+#post-preview {
+  color: #5f5f5f !important;
+  background-color: #fff !important;
+  border: 1px solid #e4e4e4 !important;
+}
+
+/**
+    Layout
+*/
+
 #globalToggle,
 #first-run,
 #globalMessage,
@@ -1419,7 +1533,6 @@ input[name="sub"] {
 }
 
 body {
-  color: #5F5F5F !important;
   margin-left: 50px !important;
   margin-right: 50px !important;
 }
@@ -1446,18 +1559,8 @@ body {
 #ctrl,
 #qf-ctrl.button {
   font-size: 9pt !important;
-  color: #5f5f5f !important;
   text-decoration: none !important;
   margin-top: 25px !important;
-}
-
-#qf-box {
-  outline: none !important;
-}
-
-input:focus, 
-textarea:focus {
-  border: none !important;
 }
 
 #settingsWindowLink {
@@ -1473,14 +1576,8 @@ textarea:focus {
   font-weight: normal !important;
 }
 
-#theme {
-  background: #fff !important;
-}
-
 #post-preview {
-  color: #5f5f5f !important;
-  background-color: #fff !important;
-  box-shadow: -1px 1px 1px rgba(0,0,0,.1);
+  border-radius: 0 !important;
 }
 
 }
