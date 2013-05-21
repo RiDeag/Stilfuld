@@ -1,4 +1,4 @@
-/*(TODO: Fix QR file-n-submit width)*/
+/*(TODO: Nothing [Until I / someone else finds something wrong, ofcourse.])*/
 
 
 @-moz-document domain("boards.4chan.org") {
@@ -1248,6 +1248,11 @@ textarea.field {
 #qr.has-spoiler .has-file #qr-filename-container {
   min-width: 68.3% !important;
   max-width: 68.3% !important;
+}
+
+#file-n-submit.has-file #qr-filename-container {
+  min-width: 74.7% !important;
+  max-width: 74.7% !important;
 }
 
 #qr-spoiler-label {
