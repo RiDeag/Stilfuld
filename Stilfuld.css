@@ -1,6 +1,5 @@
 /*(TODO: Nothing [Until I / someone else finds something wrong, ofcourse.])*/
 
-
 @-moz-document domain("boards.4chan.org") {
 
 /**
@@ -695,15 +694,19 @@ body {
   padding-top: 19px !important;
 }
 
+#header-bar.autohide:not(:hover) {
+  transition: all 1.5s 0.5s ease !important;
+}
+
 .autohide .board {
-  margin-top: -14px !important;
-  transition: all 1s ease-in-out 1s;
+  margin-top: -33px !important;
+  transition: margin 1.5s .01s ease-in-out;
 }
 
 .thread,
 .board {
   margin-top: 24px !important;
-  transition: all 1s ease-in-out 1s;
+  transition: margin .1s .05s ease-in-out;
 }
 
 .autohide #qr.dialog.autohide {
