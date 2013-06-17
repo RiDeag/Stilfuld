@@ -7,7 +7,7 @@
 
 * You MUST have "Current" in your custom navigation.
 
-* "Ctrl+B" will toggle the board list into view by default.
+* Hover over the current board title on the top left to view board list
 
 * For the Quick reply to work properly, you must have "Persistent QR" and "Auto Hide QR" enabled.
 
