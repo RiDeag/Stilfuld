@@ -1,17 +1,19 @@
-![screenshot](http://i.imgur.com/Hk86Zg6.png)
+![screenshot](http://i.imgur.com/u0eiO1g.png)
 
  Important
 -----------
 
 * This style is written for, and will only work with seaweedchan's 4chanX fork available [here] [1].
 
-* The 4chan logo in the top left works as the header-bar menu button and the text "4chan" opens the settings.
+* You MUST have "Current" in your custom navigation.
 
 * "Ctrl+B" will toggle the board list into view by default.
 
 * For the Quick reply to work properly, you must have "Persistent QR" and "Auto Hide QR" enabled.
 
 * Open the Quick reply by pressing "i" close it by pressing esc.
+
+* Hover your mouse at the bottom left to view thread stats, bottom right to toggle thread watcher and top right to view header bar menu
 
 * Most likely doesn't work on Chrome. If it doesn't, quite frankly I don't want to work on it to get it to work on Chrome.
 
