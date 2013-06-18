@@ -1572,7 +1572,7 @@ input[name="sub"] {
   font-size: 9pt !important;
 }
 
-#page-count::before {
+#page-count:not(.warning)::before {
   content:"Page: ";
 }
 
