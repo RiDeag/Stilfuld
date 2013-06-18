@@ -582,6 +582,7 @@ body {
   font-size: 0 !important;
   padding: 2px !important;
   z-index: 90 !important;
+  white-space: nowrap !important;
 }
 
 #custom-board-list a {
