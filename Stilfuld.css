@@ -853,11 +853,6 @@ body {
   max-width: 80% !important;
 }
 
-.inline .opContainer,
-.inline .postContainer{
-  padding-top: 19px !important;
-}
-
 .inline .menu-button {
   display: none !important;
 }
