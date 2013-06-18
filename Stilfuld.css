@@ -737,23 +737,17 @@ body {
 }
 
 .postContainer {
+  margin-bottom: -3px !important;
   min-width: 100% !important;
-  margin-top: -3px !important;
   z-index: 0 !important;
 }
 
 .post.reply {
   position: relative !important;
-  top: -19px !important;
-  margin-top: 1px !important;
-  margin-bottom: -19px !important;
+  margin: 0 !important;
   border-right: none !important;
   border-bottom: none !important;
   width: 99.6% !important;
-}
-
-#qp .postContainer {
-  padding-top: 19px !important;
 }
 
 #header-bar.autohide:not(:hover) {
@@ -789,10 +783,6 @@ body {
   clear: none !important;
 }
 
-.threadOP .post.reply {
-  margin-bottom: -18px !important;
-}
-
 .threadContainer {
   margin-top: 2px !important;
   margin-bottom: 2px !important;
@@ -801,19 +791,16 @@ body {
 }
 
 .threadContainer .post.reply {
-  max-width: 99.5% !important;
-  min-width: 99.5% !important;
-  margin-bottom: -19px !important;
+  max-width: 99.6% !important;
+  min-width: 99.6% !important;
 }
 
 .highlight-you:root .quotesYou > .post.reply {
   padding-right: 2px !important;
-  margin-bottom: -19px !important;
 }
 
 .highlight-you:root .yourPost > .post.reply {
   padding-right: 2px !important;
-  margin-bottom: -19px !important;
 }
 
 .highlight-you:root .quotesYou > .post.reply.qphl,
@@ -995,8 +982,8 @@ body {
 #unread-line {
   position: relative !important;
   display: block !important;
-  margin-top: 4px !important;
-  padding-bottom: 7px !important;
+  margin-top: 8px !important;
+  padding-bottom: 5px !important;
   border-top: 1px dotted !important;
   height: 1px !important;
 }
@@ -1492,8 +1479,8 @@ input[name="sub"] {
 }
 
 .hide-reply-button {
-  position: relative !important;
-  float: right !important;
+  position: absolute !important;
+  right: 54px !important;
   margin-top: 2px !important;
   margin-right: 8px !important;
   z-index: 1;
