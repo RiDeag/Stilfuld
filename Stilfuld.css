@@ -225,7 +225,6 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 }
 
 .settings-link:hover,
-#board-list a:hover,
 .postNum a {
   color: #7c818c !important;
 }
