@@ -619,7 +619,7 @@ body {
   float: right !important;
   left: 5px !important;
   padding: 5px 5px 5px 10px !important;
-  cursor: default !important;  
+  cursor: default !important;
 }
 
 #custom-board-list:hover::after {
@@ -627,7 +627,7 @@ body {
   top: 29px !important;
   left: 0px !important;
   padding-left: 25px !important;
-  content: url("http://puu.sh/3fvbG.png") !important;
+  content: url("http://i.imgur.com/j0gAa02.png") !important;
   width: 100px !important;
 }
 
@@ -644,7 +644,7 @@ body {
 
 #full-board-list a {
   white-space: pre;
-  margin:0!important;
+  margin: 0 !important;
 }
 
 #full-board-list {
