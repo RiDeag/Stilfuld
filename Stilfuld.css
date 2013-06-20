@@ -791,15 +791,12 @@ body {
 }
 
 .threadContainer .post.reply {
-  max-width: 99.6% !important;
-  min-width: 99.6% !important;
+  max-width: 99.5% !important;
+  min-width: 99.5% !important;
 }
 
+.highlight-you:root .yourPost > .post.reply,
 .highlight-you:root .quotesYou > .post.reply {
-  padding-right: 2px !important;
-}
-
-.highlight-you:root .yourPost > .post.reply {
   padding-right: 2px !important;
 }
 
@@ -807,16 +804,13 @@ body {
 .highlight-own:root .yourPost > .post.reply.qphl {
  border-color: transparent !important;
  margin-right: -25px !important;
- min-width: 99.4% !important;
- max-width: 99.4% !important;
+ min-width: 99.5% !important;
+ max-width: 99.5% !important;
 }
 
+.highlight-own:root .yourPost > .post.reply.qphl .menu-button,
 .highlight-you:root .quotesYou > .post.reply.qphl .menu-button {
   left: 1px !important;
-}
-
-.highlight-own:root .yourPost > .post.reply.qphl .menu-button {
-  left: 2px !important;
 }
 
 .replylink {
