@@ -819,12 +819,23 @@ body {
   font-size: 9pt !important;
 }
 
+.summary::before {
+  width: 91px !important;
+  content: "Thread Summary" !important;
+  position: absolute !important;
+  right: 1060px !important;
+}
+
 .summary {
   position: absolute !important;
-  right: 60px !important;
+  right: -1000px !important;
   margin-top: -22px !important;
   z-index: 1 !important;
   font-size: 9pt !important;
+}
+
+.summary:hover {
+  right: 60px !important;
 }
 
 .postNum span {
