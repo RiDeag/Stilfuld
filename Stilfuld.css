@@ -67,10 +67,6 @@
   background: #fff !important;
 }
 
-.replylink {
-  color: #069 !important;
-}
-
 .post.reply {
   background: transparent !important;
 }
@@ -471,12 +467,9 @@ input[name="sub"] {
 }
 
 .stub > a:hover,
-.menu-button:hover::after {
-  color: #666 !important;
-}
- 
+.menu-button:hover::after,
 .post.op .menu-button:hover::after {
-  color: #069 !important;
+  color: #666 !important;
 }
 
 #menu.reply.dialog {
@@ -813,6 +806,11 @@ body {
   left: 1px !important;
 }
 
+.subject {
+  font-weight: 500 !important;
+  font-size: 8pt !important;
+}
+
 .replylink {
   margin-left: 5px !important;
   margin-right: 5px !important;
@@ -1122,10 +1120,6 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 
 .fileInfo a {
   opacity: 0 !important;
-}
-
-.subject {
-  font-weight:600!important;
 }
 
 .quote a,
