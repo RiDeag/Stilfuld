@@ -627,7 +627,7 @@ body {
   top: 29px !important;
   left: 0px !important;
   padding-left: 25px !important;
-  content: url("http://i.imgur.com/j0gAa02.png") !important;
+  content: url("http://i.imgur.com/bWygtHJ.png") !important;
   width: 100px !important;
 }
 
@@ -1100,12 +1100,28 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   content: url('http://i.imgur.com/iDyadDD.png') !important;
 }
 
+.backlink.filtered::after {
+  content: url('http://i.imgur.com/z8DYJkq.png') !important;
+}
+
+.backlink.filtered:hover::after {
+  content: url('http://i.imgur.com/EYFuCPx.png') !important;
+}
 
 .fileText,
 .fileInfo a {
   font-size: 9pt !important;
   text-decoration: none !important;
   font-style: italic !important;
+}
+
+.fileInfo:hover a,
+.fileInfo .fileText a {
+  opacity: 1 !important;
+}
+
+.fileInfo a {
+  opacity: 0 !important;
 }
 
 .subject {
