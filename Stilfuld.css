@@ -820,22 +820,28 @@ body {
 }
 
 .summary::before {
+  visibility: visible !important;
+  position: absolute !important;
+  right: 0px !important;
   width: 91px !important;
   content: "Thread Summary" !important;
-  position: absolute !important;
-  right: 1060px !important;
-}
+} 
 
 .summary {
+  visibility: hidden !important;
   position: absolute !important;
-  right: -1000px !important;
+  right: 60px !important;
   margin-top: -22px !important;
   z-index: 1 !important;
   font-size: 9pt !important;
 }
 
 .summary:hover {
-  right: 60px !important;
+  visibility: visible !important;
+}
+
+.summary:hover::before {
+  visibility: hidden !important;
 }
 
 .postNum span {
