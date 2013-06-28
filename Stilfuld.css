@@ -1240,6 +1240,16 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   transition: all 0.5s ease;
 }
 
+#qr.dialog.dump.autohide {
+  top: -316px !important;
+  transition: all 0.5s ease;
+}
+
+#qr.dialog.dump.has-captcha.autohide {
+  top: -397px !important;
+  transition: all 0.5s ease;
+}
+
 #qr.autohide:not(.has-focus):not(:hover) > form,
 #file-n-submit:not(.has-file)
 #qr-filerm {
