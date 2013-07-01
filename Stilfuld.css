@@ -238,10 +238,13 @@ a.useremail[href*='SAGE'] .postertrip:hover {
  border-color: transparent !important;
 }
 
-.highlight-you:root .quotesYou > .post.reply,
 .highlight-own:root .yourPost > .post.reply {
-  border-color: #9abbcf !important;
-  border-width: 1px !important;
+  border: none !important;
+}
+
+.highlight-you:root .quotesYou,
+.highlight-own:root .yourPost {
+  border-left-color: #9abbcf !important;
 }
 
 .highlight-you:root .quotesYou > .post.reply {
@@ -1088,8 +1091,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 }
 
 .deadlink,
-.deadlink.quotelink,
-.quotelink.filtered {
+.deadlink.quotelink {
   text-decoration: line-through !important;
 }
 
