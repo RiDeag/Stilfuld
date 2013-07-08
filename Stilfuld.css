@@ -1120,6 +1120,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   content: url('http://i.imgur.com/z8DYJkq.png') !important;
 }
 
+.backlink.filtered.inlined::after,
 .backlink.filtered:hover::after {
   content: url('http://i.imgur.com/EYFuCPx.png') !important;
 }
@@ -1445,7 +1446,15 @@ input[name="sub"] {
   content: "\25BE" !important;
   font-size: 6pt !important;
 }
- 
+
+.opContainer.noFile .post.op .menu-button {
+  position: relative !important;
+  top: 3px !important;
+  right: 2px !important;
+  margin-left: 0 !important;
+  font-size: 0 !important;
+}
+
 .post.op .menu-button {
   position: relative !important;
   top: -23px !important;
