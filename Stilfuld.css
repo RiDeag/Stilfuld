@@ -1013,7 +1013,6 @@ body {
 
 .hide-announcement::after {
   margin-left: -5% !important;
-  margin-top: -5px !important;
   position: absolute !important;
   float: none !important;
   content: "Hide Announcement";
@@ -1253,8 +1252,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 }
 
 #qr.autohide:not(.has-focus):not(:hover) > form,
-#file-n-submit:not(.has-file)
-#qr-filerm {
+#file-n-submit:not(.has-file) {
   display: inherit !important;
 }
 
