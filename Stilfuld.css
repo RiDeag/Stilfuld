@@ -2,6 +2,7 @@
 
 @-moz-document domain("boards.4chan.org") {
 
+
 /**
     Main Colours
 */
@@ -1454,7 +1455,7 @@ input[name="sub"] {
 
 .post.op .menu-button {
   position: relative !important;
-  top: -25px !important;
+  top: -23px !important;
   right: 2px !important;
   margin-left: 0 !important;
   font-size: 0 !important;
