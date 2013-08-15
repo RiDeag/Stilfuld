@@ -3,6 +3,81 @@
 @-moz-document domain("boards.4chan.org") {
 
 
+/*.settings-link {
+  position: fixed !important;
+  right: 5px !important;
+  top: 5px !important;
+  color: #fff !important;
+}*/
+
+
+
+.fappeTyme .post.reply img {
+  padding: 10px !important;
+}
+
+.fappeTyme .postContainer {
+  min-width: 10% !important;
+  max-width: 50% !important;
+  float: left !important;
+  margin: 0 0 !important;
+}
+
+.fappeTyme .stub,
+.fappeTyme .hide-thread-button,
+.fappeTyme .hide-reply-button,
+.fappeTyme .file a:not(.fileThumb),
+.fappeTyme #unread-line,
+.fappeTyme .fileText,
+.fappeTyme .postInfo,
+.fappeTyme .fileInfo,
+.fappeTyme .postMessage {
+  display: none !important;
+}
+
+.fappeTyme .highlight-you:root .quotesYou,
+.fappeTyme .highlight-own:root .yourPost {
+  display: none !important;
+}
+
+.fappeTyme .opContainer,
+.fappeTyme .postContainer,
+.fappeTyme .post.reply {
+  background: none !important;
+  border: none !important;
+}
+
+.fappeTyme .fileThumb  {
+  min-height: 300px!important;
+  max-height: 300px!important;
+  
+  min-width: 300px !important;
+  max-width: 300px !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+
+.fappeTyme .threadContainer {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.fappeTyme .post.reply {
+  display: list-item !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+
+
+/* every 4th element (every 3+1) should clear any previous elements, this forces a break to a new line */
+.fappeTyme .postContainer:nth-child(2) {
+ clear: left !important;
+}
+
+
 /**
     Main Colours
 */
@@ -40,10 +115,6 @@
 #custom-board-list:hover::before {
   background: transparent !important;
 }
-/*
-#header-bar .menu-button i {
-  color: #d4d9d9 !important;
-}*/
 
 #board-list {
   color: transparent !important;
@@ -53,11 +124,6 @@
   color: transparent !important;
   cursor: default !important;
 }
-/*
-#menu.dialog:not(.left),
-#menu.dialog:not(.left) .submenu {
-  border: 4px solid #3d444e !important;
-}*/
 
 .postContainer {
   background-color: #fff !important;
@@ -903,7 +969,7 @@ body {
 
 .postInfo {
   margin-left: 8px !important;
-  margin-top: -2px !important;
+  margin-top: 2px !important;
   width: auto !important;
   display: block !important;
 }
@@ -1443,7 +1509,7 @@ input[name="sub"] {
 
 .menu-button {
   float: right !important;
-  margin-top: 5px !important;
+  margin-top: 1px !important;
   margin-right: 15px !important;
   margin-left: 10px !important;
   font-size: 0 !important;
