@@ -2,6 +2,7 @@
 
 @-moz-document domain("boards.4chan.org") {
 
+
 /**
     Main Colours
 */
@@ -152,7 +153,6 @@ body {
 .backlink:hover,
 .inline .backlink:hover,
 .postMessage .linkify:hover,
-.postMessage a:not(.deadlink):hover,
 .embedder:hover,
 .fileText:hover a,
 .fileText:hover,
@@ -183,7 +183,6 @@ body {
 .abbr a,
 .embedder,
 .linkify,
-.postMessage a:not(.deadlink),
 .globalMessage a,
 .fileThumb > img:first-child,
 .backlink,
@@ -1115,13 +1114,6 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 
 .fileInfo a {
   opacity: 0 !important;
-}
-
-.quote a,
-.prettyprint a,
-.prettyprint a:hover {
-  font-family: inherit !important;
-  cursor: text !important;
 }
 
 .prettyprint span {
