@@ -2,7 +2,6 @@
 
 @-moz-document domain("boards.4chan.org") {
 
-
 /**
     Main Colours
 */
@@ -184,7 +183,7 @@ body {
 .abbr a,
 .embedder,
 .linkify,
-.postMessage a,
+.postMessage a:not(.deadlink),
 .globalMessage a,
 .fileThumb > img:first-child,
 .backlink,
