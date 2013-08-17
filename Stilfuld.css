@@ -2,7 +2,6 @@
 
 @-moz-document domain("boards.4chan.org") {
 
-
 /**
     Main Colours
 */
@@ -1159,11 +1158,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
     Settings screen
 */
 
-#options.reply.dialog {
-  z-index: 5 !important;
-}
-
-#options.reply.dialog label {
+#fourchanx-settings.dialog label {
   text-decoration: none !important;
   font-style: italic !important;
 }
@@ -1184,6 +1179,16 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 #qr.dump #replies,
 .hasSubMenu.focused > .subMenu {
   display: block;
+}
+
+#fourchanx-settings.dialog .section-filter .field {
+  height: 540px !important;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.15) !important;
+}
+
+#fourchanx-settings.dialog .section-sauce .field {
+  height: 400px !important;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.15) !important;
 }
 
 /**
