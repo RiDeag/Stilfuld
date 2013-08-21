@@ -345,6 +345,18 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   border-top: 1px solid #f1f1f1 !important;
 }
 
+#qr .persona {
+  padding: 0 !important;
+}
+
+#qr textarea.field:hover {
+  box-shadow: inset 0 0 0 1px rgba(115, 148, 198, .15) !important;
+}
+
+#qr textarea.field:focus {
+  box-shadow: inset 0 0 0 1px rgba(115, 148, 198, .3) !important;
+}
+
 input[name="email"],
 input[name="sub"] {
   border-left: 1px solid #f1f1f1 !important;
@@ -358,11 +370,6 @@ input[name="sub"] {
 #qr .move {
   color: transparent !important;
   background-color: transparent !important;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: rgb(153, 153, 153) !important;
 }
 
 #qr-spoiler-label {
@@ -384,6 +391,15 @@ textarea,
   background-color: #fff !important;
 }
 
+.persona .field[name="name"] {
+  color: transparent !important;
+}
+
+.persona .field[name="name"]:focus,
+.persona .field[name="name"]:hover {
+  color: inherit !important;
+}
+
 select,
 textarea:not(:focus),
 .field:not(:focus) {
@@ -399,16 +415,20 @@ input[type="submit"]:active,
 input[type="submit"].active,
 input[type="submit"].disabled,
 input[type="submit"][disabled] {
-  background-color: #fafafa !important;
+  color: #919191 !important;
 }
 
+input[type="submit"].disabled,
+input[type="submit"][disabled] {
+  color: #d56b6b !important;
+}
+
+
 input[type="submit"] {
+  color: #aaaaaa !important;
   background: #fff !important;
   border: none !important;
-}
-
-input[type="submit"] {
-  border-top:none!important;
+  border-left: 1px solid #f1f1f1 !important;
 }
 
 .captcha-img {
@@ -485,6 +505,24 @@ input[type="submit"] {
   color: #5c5e5e !important;
   border: none !important;
   background: none !important;
+}
+
+.notification.warning #errmsg {
+  color: #dd0010 !important;
+}
+
+.quotelink.you {
+  font-size: 0 !important;
+}
+
+.quotelink.you:after {
+  content: ">>Reply To You";
+  font-size: 10pt !important;
+  color: #769ec2 !important;
+}
+
+.quotelink.you:hover::after {
+  color: #5e84a7 !important;
 }
 
 /**
@@ -1196,7 +1234,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 */
 
 #qr.dialog.autohide {
-  top: -226px !important;
+  top: -245px !important;
   transition: all 0.5s ease;
   z-index: 2 !important;
 }
@@ -1207,17 +1245,17 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 }
 
 #qr.dialog.has-captcha.autohide {
-  top: -308px !important;
+  top: -327px !important;
   transition: all 0.5s ease;
 }
 
 #qr.dialog.dump.autohide {
-  top: -316px !important;
+  top: -335px !important;
   transition: all 0.5s ease;
 }
 
 #qr.dialog.dump.has-captcha.autohide {
-  top: -397px !important;
+  top: -416px !important;
   transition: all 0.5s ease;
 }
 
@@ -1232,7 +1270,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   top: 29px !important;
   right: 0px !important;
   left: auto !important;
-  width: 300px !important;
+  width: 350px !important;
   transition: all 0.5s ease;
   z-index: 9 !important;
   padding: 0 !important;
@@ -1261,9 +1299,17 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 }
 
 textarea.field {
-  max-width: 294px !important;
-  height: 17em !important;
+  height: 230px !important;
   margin-bottom: -1px !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+input[type="submit"],
+#qr-no-file,
+#qr textarea.field::-moz-placeholder,
+.persona .field::-moz-placeholder {
+  font-size: 12px !important;
+  text-transform: lowercase !important;
 }
 
 .field {
@@ -1271,22 +1317,21 @@ textarea.field {
 }
 
 #qr-filename-container {
-  border-bottom-left-radius: 4px !important;
   margin-bottom: 3px !important;
   overflow: hidden !important;
   max-height: 19px !important;
-  min-width: 74.3% !important;
-  max-width: 74.3% !important;
+  min-width: 74.2% !important;
+  max-width: 74.2% !important;
 }
 
-#qr.has-spoiler .has-file #qr-filename-container {
+#qr.has-spoiler.has-file #qr-filename-container {
   min-width: 68.3% !important;
   max-width: 68.3% !important;
 }
 
 #file-n-submit.has-file #qr-filename-container {
-  min-width: 74.7% !important;
-  max-width: 74.7% !important;
+  min-width: 74.4% !important;
+  max-width: 74.4% !important;
 }
 
 #qr-spoiler-label {
@@ -1307,8 +1352,6 @@ textarea.field {
 
 #file-n-submit {
   height: 20px !important;
-  border-bottom-right-radius: 5px !important;
-  border-bottom-left-radius: 5px !important;
 }
 
 #file-n-submit input {
@@ -1341,7 +1384,7 @@ input[type="submit"] {
   margin-top: 1px !important;
   text-align: center !important;
   margin-left: -1px !important;
-  padding-bottom:1px!important;
+  padding-bottom: 2px !important;
   width: 25.2% !important;
   cursor: pointer !important;
   background-repeat: repeat-x !important;
@@ -1351,10 +1394,6 @@ input[type="submit"] {
   -moz-border-left-colors: none !important;
   border-image: none !important;
   -moz-appearance: none !important;
-}
-
-input[type="submit"] {
-  border-bottom-right-radius: 4px !important;
 }
 
 input[name="name"],
