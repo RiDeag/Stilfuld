@@ -749,8 +749,8 @@ body {
   opacity: 0 !important;
   font-size: 9pt !important;
   position: fixed !important;
-  right: -15px !important;
-  top: -1px !important;
+  right: 0 !important;
+  top: 0 !important;
   z-index: 200 !important;
   width: 20px !important;
   height: 29px !important;
