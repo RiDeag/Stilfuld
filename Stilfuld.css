@@ -457,7 +457,7 @@ input[type="submit"] {
   background: #fff !important;
 }
 
-.menu-button i {
+.postContainer .menu-button i {
   color: transparent !important;
 }
 
@@ -525,10 +525,32 @@ input[type="submit"] {
   color: #5e84a7 !important;
 }
 
+.gal-thumbnails {
+  background: rgb(50, 50, 50) !important;
+}
+
+.gal-thumbnails img {
+  opacity: 0.4 !important;
+}
+
+.gal-highlight img {
+  opacity: 1 !important;
+}
+
+.gal-highlight {
+  background: none !important;
+}
+
+/*
+.gal-highlight {
+  background: rgb(135, 135, 135) !important;
+}*/
+
 /**
     Main Layout
 */
 
+#appchan-gal,
 #boardNavDesktopFoot,
 .ad-plea,
 .expand-all-shortcut,
@@ -908,7 +930,7 @@ body {
 }
 
 .postInfo {
-  margin-left: 8px !important;
+  margin-left: 4px !important;
   margin-top: 2px !important;
   width: auto !important;
   display: block !important;
@@ -1442,7 +1464,7 @@ input[name="sub"] {
     Menu Button
 */
 
-.menu-button {
+.postContainer .menu-button {
   float: right !important;
   margin-top: 1px !important;
   margin-right: 15px !important;
@@ -1450,7 +1472,7 @@ input[name="sub"] {
   font-size: 0 !important;
 }
  
-.menu-button::after {
+.postContainer .menu-button::after {
   content: "\25BE" !important;
   font-size: 6pt !important;
 }
